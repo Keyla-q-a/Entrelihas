@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Poppins&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Entrelinhas - Cadastro de Livros</title>
+</head>
+<body>
+
+    <header>
+        <a href="#"><img src="logo.png" alt="Entrelinhas"></a> <!-- LIGAR: página Início -->
+        <nav>
+            <a href="#">Início</a>             <!-- LIGAR: página Início -->
+            <a href="#">Explorar livros</a>    <!-- LIGAR: página Explorar livros -->
+            <a href="#">Minha estante</a>      <!-- LIGAR: página Minha estante -->
+            <a href="#">Cadastro de Livros</a> <!-- página atual -->
+        </nav>
+        <a class="perfil" href="#">Meu perfil</a> <!-- LIGAR: página Perfil -->
+    </header>
+
+    <main>
+        <h1>Compartilhe uma leitura</h1>
+        <p>Adicione um livro ao catálogo da comunidade Entrelinhas.</p>
+
+        <form>
+            <h2>Informações do livro</h2>
+
+            <div class="linha">
+                <div class="campo">
+                    <label>Título do livro</label>
+                    <input type="text" placeholder="Digite o título">
+                </div>
+                <div class="campo">
+                    <label>Autor(a)</label>
+                    <input type="text" placeholder="Nome do autor">
+                </div>
+            </div>
+
+            <div class="linha">
+                <div class="campo">
+                    <label>Gênero</label>
+                    <select>
+                        <option>Selecione um gênero</option>
+                        <option>Romance</option>
+                        <option>Fantasia</option>
+                        <option>Suspense</option>
+                        <option>Terror</option>
+                        <option>Poesia</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Ano de publicação</label>
+                    <input type="number" placeholder="Ex: 2024">
+                </div>
+            </div>
+
+            <label>Sinopse</label>
+            <textarea placeholder="Escreva uma breve descrição..."></textarea>
+
+            <!-- LIGAR: ao cadastrar, levar para a página Explorar livros -->
+            <button type="submit">Cadastrar livro</button>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <img src="mascote.png" alt="Mascote">
+            © Entrelinhas 2026
+        </div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Explorar livros</a>
+            <a href="#">Minha estante</a>
+            <a href="#">Cadastro de Livros</a>
+            <a href="#">Contato</a>   <!-- LIGAR: página Contato (e os outros links igual ao menu) -->
+        </nav>
+        <div class="redes">
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-tiktok"></i>
+            @entrelinhas
+        </div>
+    </footer>
+
+</body>
+</html>
